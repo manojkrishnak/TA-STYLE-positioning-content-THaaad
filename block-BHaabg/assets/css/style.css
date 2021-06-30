@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* custom css */
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+/* header */
+
+.header{
+	background-color: yellow;
+	height: 72px;
+	line-height: 72px;
+	position: fixed;
+	width: 100%;
+}
+
+.brand img{
+	height: 30px;
+	width: 60px;
+	vertical-align: middle;
+}
+
+.brand{
+	float: left;
+}
+
+.navbar{
+	float: right;
+}
+
+.navbar a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	margin-left: 32px;
+	font-weight: 700;
+}
+
+
+/* Article */
+.article-1{
+	background-color: aliceblue;
+	padding: 80px 0;
+	padding-top: 152px;
+}
+
+.article-heading{
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.article-text{
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.col{
+	float: left;
+	width: 50%;
+}
+
+.article-img{
+	width: 80%;
+	border: 2px solid black;
+	border-radius: 8px;
+	margin-left: 90px;
+}
+
+/* Gallery */
+.gallery{
+	padding: 60px 0;
+}
+
+.gallery img{
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.col-1-3{
+	float: left;
+	width: 30%;
+	margin: 1.5%;
+}
+
+/* footer */
+.footer{
+	background-color: yellow;
+	padding: 20px;
+}
+
+/* .copyright{
+	display: inline-block;
+	width: auto;
+} */
+
+.footer-navbar{
+	text-align: center;
+}
+
+.footer-navbar a{
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 32px;
+	color: black;
+	font-weight: 700;
+}
+
+/* top button */
+.top-btn{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: tomato;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15px;
+	position: fixed;
+	right: 32px;
+	bottom: 15px;
+}
